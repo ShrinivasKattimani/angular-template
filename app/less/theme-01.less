@@ -1,0 +1,121 @@
+.theme-01 {
+    @color-1: #000;
+    @color-2: #fff;
+    @color-3: #f16969;
+    @color-4: #c4a22c;
+    @color-5: #58bf83;
+    @color-6: #f4f4f4;
+    @color-7: #d0d0d0;
+    @color-8: #2a2d30;
+    @color-9: #dfe8ed;
+    @color-10: #7c8890;
+    @color-11: #b3bcc0;
+    @color-12: #eccc1b;
+    @color-13: #2aacb7;
+    @color-14: #035e66;
+    @color-15: #5d927f; 
+    @color-16: #6fadda;
+    @color-17: #bbae79; 
+    @color-18: #cf9aa1; 
+    @color-19: #75c9d0;
+    @color-20: #6eacda;
+    @color-21: #828486;
+    @color-22: #336283;
+    @color-23 :#87424B;
+    @color-24 :#045e66;
+    @color-25 : #8d8f90; 
+    
+//## Gray and brand colors for use across Blueprint.
+
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 60%);   // #999
+@gray-lighter:           lighten(@gray-base, 90%); // #eee
+
+@brand-primary:         #eccc1b;
+@brand-success:         #58bf83;
+@brand-info:            #6fadda;
+@brand-warning:         #87424B;
+@brand-danger:          #f16969;
+    
+//** Background color for `<body>`.
+@body-bg:               #fff;
+//** Global text color on `<body>`.
+@text-color:            @gray-dark;    
+    
+@top-header-bg: #fff;    
+    
+    
+    
+    
+    /* ----- Base font size ----- */
+    @base-font: 16px;
+    @heading-font: 32px; 
+    
+    /* import component less files */
+    @import (multiple) "open-sans";
+    @import (multiple) "fonts";
+    @import (multiple) "mixins";
+    @import (multiple) "general";
+    @import (multiple) "header";
+    //@import (multiple) "navigations";
+    @import (multiple) "my-space";
+    @import (multiple) "carousel-banner";
+    @import (multiple) "profile";
+    /*@import (multiple) "cost-summary";*/ 
+    //@import (multiple) "grid-boxes";
+    @import (multiple) "time-line";
+    @import (multiple) "dropdown";
+    @import (multiple) "panel";
+    @import (multiple) "tabs";
+    //@import (multiple) "footer";
+    //@import (multiple) "landing-page";
+    //@import (multiple) "who-we-are";
+    @import (multiple) "top-bar";
+    @import (multiple) "breadcrumb";
+    @import (multiple) "buttons";
+    @import (multiple) "form";
+    @import (multiple) "table-view";
+    @import (multiple) "modal";
+    @import (multiple) "icons";
+    @import (multiple) "fill-timesheet";
+    @import (multiple) "timesheet-approval";
+    //@import (multiple) "settings";
+    @import (multiple) "date-picker";
+    //@import (multiple) "bottom-notification";
+    //@import (multiple) "site-header";
+    @import (multiple) "toastr-custom";
+    @import (multiple) "video";
+    @import (multiple) "my-team";
+    @import (multiple) "notification";
+    @import (multiple) "tooltip";
+    @import (multiple) "filter";/*
+    @import (multiple) "filter-options";*/
+    @import (multiple) "notification-approval";
+    @import (multiple) "comingsoon";
+    @import (multiple) "footer";
+    @import (multiple) "feedback";
+    @import (multiple) "expense";
+    @import (multiple) "appraisal";
+    @import (multiple) "loaders";
+    @import (multiple) "web-chat";
+	@import (multiple) "survey-widget";
+    @import (multiple) "location-search";
+    @import (multiple) "dd-notification";
+}
+
+.d3-context-menu ul {
+    
+    li {
+        
+    }
+    
+    li.is-disabled, 
+    li.is-disabled:hover {
+        font-weight: 100;
+        font-style: normal;
+        opacity: .4;
+    }
+}

@@ -1,0 +1,60 @@
+.top-bar{
+ padding:20px 0;
+ h2{
+  margin:0 40px 0 0;
+  padding:0;
+  display:inline-block;
+  vertical-align:middle;
+        font-size: @base-font + 9;
+ }
+    
+ .dropdown{
+  display:inline-block;
+  vertical-align:middle;
+  border:1px solid @color-11;
+  .border-radius(20px);
+  .btn{
+   padding: 4px 12px;
+   text-transform:none;
+   .glyphicon, .fa{
+    margin-left:8px;
+                top: -1px;
+   }
+  }
+  .dropdown-menu{
+   .border-radius(10px);
+   /*max-width:100%;*/
+   ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    li{
+     border-bottom:1px solid @color-11;
+     .checkbox{
+      margin:0;
+      label{
+       overflow:hidden;
+       text-overflow:ellipsis;
+       white-space:nowrap;
+       padding:10px;
+       vertical-align:middle;
+      }
+     }
+     &:last-child{
+      border:none;
+     }
+    }
+   }
+  }
+  &.pager-dropdown {
+   border:none;
+   border-radius:0;
+   border-bottom: 1px solid #d0d0d0;
+  }
+ }
+    .nav-section{
+  		display:inline-block;
+		float:right;
+		position: relative;
+ }
+}

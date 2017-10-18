@@ -1,0 +1,47 @@
+<script type="text/ng-template" id="recursiveTemplate">
+  <ul ng-if="project.parentId=='0' ? true : project.open">
+    <li>
+      <p>
+        <h4 ng-class="{'fa': true, 'fa-chevron-down': project.children[0].open, 'fa-chevron-right': !project.children[0].open}" aria-hidden="true">{{project.label}}</h4>
+        <button ng-click="expandCollapse(project)" ng-if="project.children.length>0">+/-</button>
+      </p>
+    </li>
+    <li>
+      <table>
+        <head>
+          <tr ng-repeat="row in projectMeta">
+            <th ng-repeat="column in row"
+              rowspan="{{column.rowSpan}}"
+              colspan="{{column.colSpan}}">
+              {{column.label}}
+            </th>
+          </tr>
+        </head>
+        <tr>
+          <td ng-repeat="key in renderingOrder">{{project.data[key]}}</td>
+        </tr>
+      </table>
+    </li>
+  </ul>
+  <ul ng-if="project.children.length>0">
+    <li ng-repeat="project in project.children"
+      ng-include="'recursiveTemplate'">
+    </li>
+  </ul>
+</script>
+
+
+<ul>
+  <li ng-repeat="project in projectData"
+    ng-include="'recursiveTemplate'">
+  </li>
+</ul>
+
+<style>
+  table, th, td {
+      border: 1px solid black;
+  }
+  ul li {
+    padding-left: 30px;
+  }
+</style>

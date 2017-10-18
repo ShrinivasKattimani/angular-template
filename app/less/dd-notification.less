@@ -1,0 +1,128 @@
+@badge-color: @color-4;
+@footer-bg: @color-9;
+@link-color: @color-16;
+
+.open .dropdown-menu{
+	/* display: block; */
+}
+
+.dd-notification{
+	.dd-notification-wrapper{
+		width: 550px;
+		left: auto;
+		right: -100px;
+		top: 120%;
+		padding-bottom: 0px;
+		&:before{
+			left: auto;
+			right: 110px;
+		}
+		h3{
+			margin: 0;
+			font-size: 12px;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+		.notification-header{
+			padding: 10px 15px;
+			border-bottom: 1px solid @color-7;
+			.badge{
+				background: @badge-color;
+				font-weight: 400;
+				position:static;
+			}
+		}
+		.notification-footer{
+			background: @footer-bg;
+			padding: 10px 15px;
+			border-radius: 0 0 6px 6px;
+			text-align: center;
+			p{
+				margin: 0;
+				text-transform: uppercase;
+				font-weight: 600;
+				color: @link-color;
+				.fa{
+					margin-left: 15px;
+					color: @color-8;
+				}
+			}
+		}
+		.notification-list{
+			max-height: 200px;
+			overflow: auto;
+            .notification-tbl:last-child {
+                border-bottom: none;
+            }
+		}
+	}
+}
+.notification-list{
+    .notification-tbl:last-child {
+        border-bottom: none;
+    }
+}
+
+.notification-tbl{
+	display: table;
+	width: 100%;
+	border-bottom: 1px solid @color-7;
+	> div{
+		display: table-cell;
+		padding: 10px;
+		vertical-align: top;
+		&.left{
+			width: 75px;
+		}
+
+	}
+	.time{
+		float: right;
+		text-transform: uppercase;
+		opacity: 0.6;
+		font-size: 0.8em;
+	}
+	.name{
+		margin:0 0 5px;
+		color: @color-1;
+		font-weight: 600;
+	}
+	.msg{
+		color: @color-8;
+		line-height: 1.3;
+		a{
+			font-weight: 600;
+		}
+	}
+	.profile-pic{
+		border-radius: 10px;
+		overflow: hidden;
+		display: block;
+		width: 50px;
+		height: 50px;
+		overflow: hidden;
+		box-shadow: 0px 0px 1px @color-8;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.action-links{
+		padding: 5px 0 0;
+        .btn{
+            padding: 0;
+        }
+		a{
+			display: inline-block;
+			margin: 0 10px 0 0;
+			color: @color-1;
+			text-transform: uppercase;
+			text-decoration: none;
+			img{
+				display: inline-block;
+				vertical-align: middle;
+				margin:-2px 5px 0 0;
+			}
+		}
+	}
+}

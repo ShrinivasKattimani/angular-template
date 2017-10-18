@@ -1,0 +1,117 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    background:#dfe8ed;
+    color: #000;
+    .font-normal;
+    font-size:13px;
+     
+}
+a,
+a:focus,
+a:hover {
+    outline: 0px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    font-weight: 500;
+}
+.container {
+    line-height: 1;
+    /*width: 1200px;*/
+    min-width: 990px;
+}
+.container-fluid {
+    min-width: 990px;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.icon.down-arrow {
+    background-position: center center;
+    background-image: url(../images/dropdown_dwn_icon.png) !important;
+}
+.disabled {
+    opacity: .3;
+    pointer-events: none;
+    a {
+        cursor: default;
+    }
+}
+.overlay-blocker {
+    position: fixed;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.1);
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.link-cursor {
+    cursor: pointer;
+    img{
+        padding-right:5px;
+        padding-top: 2px;
+    }
+}
+
+/* clock */
+#clock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto 0 auto;
+  background: url(../images/clockface.jpg);
+  list-style: none;
+}
+
+#sec, #min, #hour {
+  position: absolute;
+  width: 30px;
+  height: 300px;
+  top: 0px;
+  left: 125px;
+}
+
+#sec {
+  background: url(../images/sechand.png);
+  z-index: 3;
+}
+   
+#min {
+  background: url(../images/minhand.png);
+  z-index: 2;
+}
+   
+#hour {
+  background: url(../images/hourhand.png);
+  z-index: 1;
+}
+#sec {
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+
+.mCSB_scrollTools .mCSB_buttonUp,
+    .mCSB_scrollTools .mCSB_buttonDown,
+    .mCSB_scrollTools .mCSB_buttonLeft,
+    .mCSB_scrollTools .mCSB_buttonRight{
+        background-image: url(../images/mCSB_buttons.png); /* css sprites */
+        background-repeat: no-repeat;
+        opacity: 0.4; filter: "alpha(opacity=40)"; -ms-filter: "alpha(opacity=40)"; 
+    }
+
+.text-overflow{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.3em;
+}

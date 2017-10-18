@@ -1,0 +1,114 @@
+<!doctype html>
+<html ng-app="boqApp" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="cache-control" content="no-cache" />
+  <title class="app-title:pageTabTitle" idle-disabled="true"></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" href="bower_components/allmighty-autocomplete/style/autocomplete.css" />
+  <link rel="stylesheet" href="bower_components/ngprogress-lite/ngprogress-lite.css" />
+  <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+  <link rel="stylesheet" href="bower_components/d3-context-menu/css/d3-context-menu.css" />
+  <link rel="stylesheet" href="bower_components/trix/dist/trix.css" />
+  <link rel="stylesheet" href="bower_components/ng-sortable/dist/ng-sortable.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <!-- endbuild -->
+  <link rel="stylesheet" href="http://app006azrare.cloudapp.net/bpcdn/v4/css/bootstrap.css">
+  <link rel="stylesheet" href="http://app006azrare.cloudapp.net/bpcdn/v4/css/core.css">
+  <link rel="stylesheet" href="http://app006azrare.cloudapp.net/bpcdn/v4/css/theme-01.css">
+  <link rel="stylesheet" href="http://app006azrare.cloudapp.net/bpcdn/v4/css/layout-01.css">
+  <link rel="stylesheet" href="http://app006azrare.cloudapp.net/bpcdn/v4/css/widget.css">
+  <link rel="stylesheet" href="http://app006azrare.cloudapp.net/bpcdn/v4/css/portal.css">
+  <link rel="stylesheet" href="http://app006azrare.cloudapp.net/bpcdn/v4/css/ess.css">
+  <style type="text/css">
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  /*.x.axis path {
+                display: none;
+            }*/
+
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+  </style>
+</head>
+
+<body class="theme-01" ng-cloak style="background:#f2f2f2">
+  <div ui-view=""></div>
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-translate/angular-translate.js"></script>
+  <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+  <script src="bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+  <script src="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+  <script src="bower_components/ng-scrollbars/dist/scrollbars.min.js"></script>
+  <script src="bower_components/adal-angular/lib/adal.js"></script>
+  <script src="bower_components/adal-angular/lib/adal-angular.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+  <script src="bower_components/re-tree/re-tree.js"></script>
+  <script src="bower_components/ng-device-detector/ng-device-detector.js"></script>
+  <script src="bower_components/allmighty-autocomplete/script/autocomplete.js"></script>
+  <script src="bower_components/ngprogress-lite/ngprogress-lite.js"></script>
+  <script src="bower_components/spin.js/spin.js"></script>
+  <script src="bower_components/angular-spinner/angular-spinner.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/angular-moment/angular-moment.js"></script>
+  <script src="bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js"></script>
+  <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+  <script src="bower_components/angular-filter/dist/angular-filter.min.js"></script>
+  <script src="bower_components/d3/d3.js"></script>
+  <script src="bower_components/d3-context-menu/js/d3-context-menu.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/trix/dist/trix.js"></script>
+  <script src="bower_components/angular-trix/dist/angular-trix.js"></script>
+  <script src="bower_components/ng-sortable/dist/ng-sortable.js"></script>
+  <script src="bower_components/ng-idle/angular-idle.js"></script>
+  <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
+  <script src="bower_components/signalr/jquery.signalR.js"></script>
+  <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <script src="@@scriptCDN/appUserInfoHeader-v4.js"></script>
+  <script src="@@scriptCDN/support-link.js"></script>
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <!-- dependency component [begin] -->
+  <!-- endbuild -->
+  <!-- dependency component [end] -->
+  <!-- build:js({.tmp,app}) scripts/app.js -->
+  <!-- General JS files-->
+  <script src="modules/config.js"></script>
+  <script src="modules/app.js"></script>
+  <script src="modules/appConfig.js"></script>
+  <!-- BOQ Files -->
+  <script type="text/javascript" src="./modules/BOQ/page/boq-config.js"></script>
+  <script type="text/javascript" src="./modules/BOQ/page/boq-controller.js"></script>
+  <script type="text/javascript" src="./modules/BOQ/component/boq-component.js"></script>
+  <script type="text/javascript" src="./modules/BOQ/component/boq-services.js"></script>
+  <script type="text/javascript" src="./modules/BOQ/rest-services.js"></script>
+  <!-- ./BOQ Files -->
+  <!-- endbuild -->
+</body>
+
+</html>

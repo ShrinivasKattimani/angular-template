@@ -1,0 +1,332 @@
+.expense-submitted-table {
+    .col-1{width:10%}
+    .col-2{width:10%}
+    .col-3{width:16%}
+    .col-4{width:11%}
+    .col-5{width:15%}
+    .col-6{width:9%}
+    .col-7{width:9%}
+    .col-8{width:12%}
+    .col-9{width:8%}
+    
+     .table-view{
+         table > tbody >  tr > td{
+             p{
+                 .text-overflow;
+                 
+             }
+         }
+    }
+}
+.expense-updateable-table {
+    .col-1{width:10%}
+    .col-2{width:10%}
+    .col-3{width:16%}
+    .col-4{width:14%}
+    .col-5{width:41%}
+    .col-6{width:8%}  
+}
+
+.expense-summary-header {
+    background: #eff4f6;
+    padding: 15px;
+    border-radius: 4px; 
+    
+    label {
+        color: rgba(0,0,0,.8);
+        font-weight: 100;
+    }
+    .text-right{
+        .attached-files{
+            text-align: left;
+           /* display: inline-flex;*/
+            div{
+                max-width:160px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                line-height:1.2em;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.expense-summary-body {
+    text-align: left;
+    .table-view{
+        .popover  {
+            width: 200px;
+            p{
+                width: initial;
+                word-wrap: break-word;
+                text-overflow: initial;
+                white-space: normal;
+                width:180px !important;
+            }
+        }
+    }
+
+    .type-1 {
+        .col-1{width:3%}
+        .col-2{width:3%}
+        .col-3{width:3%}
+        .col-4{width:9%}
+
+        .col-6{width:12%}
+        .col-7{width:30%}
+        .col-8{width:30%} 
+        .col-9{width:14%} 
+        
+    }
+    
+    .type-2 {
+        .col-1{width:2.8%}
+        .col-2{width:8%}
+        .col-3{width:8%}
+        .col-4{width:8%}
+        .col-5{width:25%}
+        .col-6{width:25%}
+        .col-7{width:10%}
+        .col-8{width:13%} 
+    }    
+    
+    .type-3 {
+        .col-1{width:3%}
+        .col-2{width:9%}
+        .col-3{width:9%}
+        .col-4{width:29%}
+        .col-5{width:29%}
+        .col-6{width:10%}
+        .col-7{width:9%}
+        .col-8{width:15%} 
+    }
+    
+        .table-view.type-1{
+            table > thead > tr > td{
+                p.receipt_amount{
+                    word-wrap: break-word;
+                    width: 100px;
+                }
+            }
+         table > tbody >  tr > td{
+            p{
+            .text-overflow;
+                width:120px;
+            }
+             
+            p.expense-type{
+            
+               width:290px;
+                cursor: pointer;
+            }
+             p.justification{
+                width:320px; 
+                 cursor: pointer;
+             }
+             p.receipt-amount{
+                 cursor: pointer;
+                 width:120px;
+             }
+            p.expense-type-total{
+                width:auto;
+                cursor: pointer;
+            }
+            p.reiumburse-amount{
+                 width:130px;
+                 cursor: pointer;
+             }
+        }
+            
+         
+    }
+        .table-view.type-2{
+         table > tbody tr > td{
+            p{
+            .text-overflow;
+                width:120px;
+            }
+            p.expense-type, p.justification{
+               width:270px;
+               cursor: pointer;
+            }
+             p.destination{
+                 width:105px;
+                 cursor: pointer;
+             }
+              p.expense-type-total{
+                width:auto;
+            }
+             p.reiumburse-amount{
+                 width:90px;
+                 cursor: pointer;
+             }
+        }
+    }
+    
+     .table-view.type-3{
+         table > tbody tr > td{
+            p{
+            .text-overflow;
+                width:120px;
+            }
+             p.expense-type, p.justification{
+               width: 290px;
+                 cursor: pointer;
+            }
+             p.trip-distance{
+                 width:90px;
+                 cursor: pointer;
+             }
+            p.expense-type-total{
+                width:auto;
+            }
+             p.reiumburse-amount{
+                 width:90px;
+                 cursor: pointer;
+             }
+             p.mileage-rate{
+                 width:90px;
+                 cursor: pointer;
+             }
+             
+         }
+    }
+    .expense-type-total {
+        text-align: right;
+        span{
+            display: inline-block;
+            padding-left: 30px;
+        }
+    }
+}
+
+
+.total-color-1{
+        color:@color-5;
+        font-weight:bold;
+}
+.total-color-2{
+        color:@color-5;
+        font-weight:bold;
+}
+.total-color-3{
+        color:@color-5;
+        font-weight:bold;
+}
+.expense-scroll.scroll-content{
+    height:499px;
+    min-height:499px;
+    overflow-y: auto;
+    max-height: none;
+}
+
+.expense-bottom{
+    width:100%;
+    position: relative;
+    margin: 20px 0;
+    .expense-button-left{
+        float: left;
+    }
+    .expense-button-right{
+        float: right;
+    }
+}
+
+
+/*Expense Progress Styles*/
+.expense-progress{
+    margin:0px auto;
+    width:430px;
+    position: relative;
+    top:-54px;
+    .progressbar{
+         /*counter-reset: step;*/
+        li{
+              list-style-type: none;
+              width:30%;
+              float: left;
+              font-size: 12px;
+              position: relative;
+              text-align: center;
+              text-transform: uppercase;
+              color: #7d7d7d;
+            &:before{
+              width:20px;
+              height:20px;
+              line-height:20px;
+              content:" ";
+             /* counter-increment: step;*/
+              
+              border: 2px solid #7d7d7d;
+              display: block;
+              text-align: center;
+              margin: 0 auto 10px auto;
+              border-radius: 50%;
+              background-color: white;
+                position: relative;
+                z-index: 10;
+             }
+            &:after{
+              width: 100%;
+              height: 2px;
+              content: '';
+              position: absolute;
+              background-color: #7d7d7d;
+              top:10px;
+              left: -50%;
+              z-index:0;
+           }
+            &:first-child:after{
+                content: none;
+            }
+            
+        }
+        li.active{
+            color:green;
+            &:before{
+                border-color: darken(@color-5,10%);
+                background:darken(@color-5,10%);
+            }
+        }
+        li.active.step-1{
+            &:after{
+                background-color: #7d7d7d;;
+            }
+            
+        }
+        li.active:after{
+            background-color:darken(@color-5,10%);
+        }
+    }
+}
+
+.expense-progress.progress-last-step{
+    left: 5%;
+    margin: 30px 0;
+    position: absolute;
+    top: -74px;
+    width: auto;
+}
+
+.receipt-exchange{
+    .col-xs-6.receipt-left{
+        padding-left:0;
+    }
+    .col-xs-6.exchange-right{
+        padding-right:0;
+    }
+}
+
+@media (min-width:320px) and (max-width:767px){
+    .bp-steppers-panel{
+        .col-sm-12{
+            position: inherit;
+            .stepper-menu{
+                .stepper-control{
+                    left:35%;
+                }
+            }
+        }
+    }
+}

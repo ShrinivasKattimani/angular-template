@@ -1,0 +1,101 @@
+.date-picker{
+
+    .date-picker-label {
+        text-transform: uppercase;
+        color:@color-10;
+        font-size: @base-font - 2;
+        margin-bottom: 20px;
+    }
+    
+    table {
+        border:1px solid @color-11;
+		width:100%;
+        
+        thead>tr:first-child {
+            border-bottom:1px solid @color-11;
+        }
+    }
+    
+    /*.dropdown-menu {
+        li {
+            background: transparent;
+            table {
+                td {
+                    width: auto;
+                    min-width: 20px !important;
+                }
+            }
+        }
+    }*/
+    
+    .btn {
+        border: none;
+    }
+    
+    .btn-default {
+        background: transparent;
+        color: @color-1;
+    }     
+    .btn-default.active {
+        box-shadow :none;
+        -webkit-box-shadow:none;
+        color: @color-13;
+    }
+    .btn+.btn {
+        margin-left: 0;
+    }
+	
+	
+	/* ------- Day view  ------ */
+	.uib-daypicker{
+		td{ 
+			.btn{ padding:5px;}
+		}
+		
+	}
+	
+	/* ------- Month view  -------*/
+	.uib-months{
+		td{ 
+			.btn{ padding:15px 5px;}
+		}
+		
+	} 
+	/* ---- Year View --------- */
+	.uib-yearpicker {
+		td{ 
+			.btn{ padding:14px 5px;}
+		}
+		
+	}
+	
+	
+    
+}
+
+
+
+.uib-datepicker-popup{
+    padding: 3px;
+    table{
+        .btn.btn-default{
+            background: none;
+            border: none;
+            color: @color-10;
+            position: relative;
+            &.active{
+                color: darken(@color-10, 10%);
+                box-shadow: none;
+            }
+        }
+    
+    }
+    .uib-button-bar{
+        button{
+            border-color: @color-10;
+            font-size: @base-font - 6;
+        }
+    
+    }
+
+}

@@ -1,0 +1,16 @@
+node_modules
+dist
+.tmp
+.sass-cache
+app/bower_components
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components
+/test
+/app/videos/bp.mp4
+*.orig
+*.*~
+.DS_Store
+*.DS_Store

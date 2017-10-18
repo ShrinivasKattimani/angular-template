@@ -1,0 +1,442 @@
+.survey-loader{
+	height: 100%;
+	text-align: center;
+	line-height: 160px;
+	
+	i.fa{
+		font-size: 40px;
+		color: @color-10;
+	}
+}
+.red{
+	color: @color-4;
+}
+.survey-name{
+	font-weight: 600;
+}
+.survey-widget{
+	 .widg-view-more-panel {
+		bottom: 40px;
+	}
+    .panel-heading{
+        .col-title{
+            width: 70%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;            
+        }
+    }
+    @media (max-width: 1200px){
+        .panel{
+            .panel-body{
+                width: 100%;
+            }
+        }
+        .survey-questions{
+            .answer{
+                .radio-group{
+                    white-space: normal;
+                    text-align: center;
+                    label{
+                        margin-bottom: 2px;    
+                    }
+                }
+            } 
+        } 
+    }
+}
+.survey-wrapper{	
+	max-width: 900px;
+	border-radius: 6px;
+	box-shadow: 0 0 5px @color-8 ;
+	
+	margin: 30px auto ;
+	background: @color-2;
+	padding: 10px;
+	.no-rating-msg{
+		padding: 10px;
+		background: @color-5;
+		color: @color-2;
+		font-weight: 600;
+		text-align: center;
+		p{
+			margin: 0;
+		}
+	}
+	.survey-questions, .survey-questions.result-header{
+		.tbl-row{
+			display: table-row;
+		}
+		.question{
+		
+		}
+		.answer{
+			width: 300px;
+			.radio-group{
+				text-align: center;
+				.radio{
+					margin: 0 10px;
+				}
+			}
+			
+		}
+	}
+}
+
+
+.survey-questions{
+	display: table;
+	width: 100%;
+	background: lighten(@color-9, 5%);
+	margin-bottom: 3px;
+    .tbl-row {
+        display: table-row;
+    }
+    div.question,div.answer{
+		display: table-cell;
+		padding: 10px;
+		font-size: 1.1rem;
+		vertical-align: middle;
+	}
+	.answer{
+         width: 200px;
+		.radio-group{
+			white-space: nowrap;
+			border-radius: 6px;
+			text-align: right;
+			label{
+				display: inline-block;
+				vertical-align: middle;
+//				background: darken(@color-9, 35%);
+				background: @color-2;
+				margin: 0;
+				padding: 0;
+				border-radius: 50%;
+				color: @color-2;
+				font-size: 16px;
+				font-weight: 600;
+				opacity: 1;
+				width: 35px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				transition: all 0.3s;
+				border:2px solid transparent;
+				.fa{
+					font-size: 20px;
+				}
+				&:before{
+					display: none;
+				}
+				&.yes{
+					border-color: @color-5;
+					color: @color-5;
+					&:hover{
+						background: @color-5;
+						color: @color-2;
+					}
+				}
+				&.no{
+					border-color: @color-3;
+					color: @color-3;
+					&:hover{
+						background: @color-3;
+						color: @color-2;
+					}
+				}
+				&.nutral{
+					border-color: @color-12;
+					color: @color-12;
+					&:hover{
+						background: @color-12;
+						color: @color-2;
+					}
+				}
+			}
+			.radio{
+				//display: table-cell;
+				padding:0 1px;
+				input[type='radio']:checked+label{					
+					&.yes{
+						background: @color-5;
+						color: @color-2;
+					}
+					&.no{
+						background: @color-3;
+						color: @color-2;
+					}
+					&.nutral{
+						background: @color-12;
+						color: @color-2;
+					}
+				}
+			}
+		}
+	}
+	.form-element{
+		border: none;
+        padding: 0 10px;
+	}
+	.field-name{
+		position: relative;
+		padding: 5px 0;
+		color: @color-1;
+		font-weight: 400;
+		text-transform: none;
+		font-size: 1.1rem;
+		.counter{
+			opacity: 0.6;
+			font-weight: 600;
+		}
+	}
+	.placeholder-label{
+		background: @color-2;
+		border-radius: 6px;
+		margin-bottom: 10px;
+		textarea{
+			color: @color-1;
+			font-weight: 400;
+		}
+	}
+	&.result-header{
+		background: darken(@color-9, 10%);
+		.question{
+			h3{
+				margin: 0;
+				text-transform: uppercase;
+				font-size: 18px;
+				font-weight: 600;
+			}
+		}
+		.answer{
+			label{
+				width: 50px;
+				height: 50px;
+				line-height:15px;
+				font-size: 30px;
+				span.count {
+					font-size:0.8rem;
+					display: block;
+					padding-top: 3px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+				}
+				&.yes{
+					background: @color-5;
+					color: @color-2;
+				}
+				&.no{
+					background: @color-3;
+					color: @color-2;
+				}
+				&.nutral{
+					background: @color-12;
+					color: @color-2;
+				}
+			}
+		}
+	}
+    .radial-progress {
+        @circle-size: 50px;
+        @circle-background: darken(@color-9, 15%);
+        @circle-color: #97a71d;
+        @inset-size: 40px;
+        @inset-color: #fbfbfb;
+        @transition-length: 1s;
+        @shadow: 6px 6px 10px rgba(0,0,0,0.2);
+        @percentage-color: #97a71d;
+        @percentage-font-size: 10px;
+        @percentage-text-width: 57px;
+
+        /*margin: 50px;*/
+        width:  @circle-size;
+        height: @circle-size;
+
+        background-color: @circle-background;
+        border-radius: 50%;
+        .circle {
+            .mask, .fill, .shadow {
+                width:    @circle-size;
+                height:   @circle-size;
+                position: absolute;
+                border-radius: 50%;
+            }
+//            .shadow {
+//                box-shadow: @shadow inset;
+//            }
+            .mask, .fill {
+                -webkit-backface-visibility: hidden;
+                transition: -webkit-transform @transition-length;
+                transition: -ms-transform @transition-length;
+                transition: transform @transition-length;
+                border-radius: 50%;
+            }
+            .mask {
+                clip: rect(0px, @circle-size, @circle-size, @circle-size/2);
+                .fill {
+                    clip: rect(0px, @circle-size/2, @circle-size, 0px);
+                   // background-color: @circle-color;
+					
+                }
+            }
+        }
+        .inset {
+            width:       @inset-size;
+            height:      @inset-size;
+            position:    absolute;
+            margin-left: (@circle-size - @inset-size)/2;
+            margin-top:  (@circle-size - @inset-size)/2;
+
+            background-color: @inset-color;
+            border-radius: 50%;
+           // box-shadow: @shadow;
+            .percentage {
+                height:   @percentage-font-size;
+                width:    @percentage-text-width;
+                overflow: hidden;
+
+                position: absolute;
+                top:      (@inset-size - @percentage-font-size) / 2;
+                left:     (@inset-size - @percentage-text-width) / 2;
+
+                line-height: 1;
+                .numbers {
+                   /* margin-top: -@percentage-font-size;
+                    transition: width @transition-length;*/
+                    span {
+                        width:          @percentage-text-width;
+                        display:        inline-block;
+                        vertical-align: top;
+                        text-align:     center;
+                        font-weight:    800;
+                        font-size:      @percentage-font-size;
+                        font-family:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        color:          @percentage-color;
+						
+                    }
+                }
+            }
+        }
+
+        @i: 0;
+        @j: 100;
+        @increment: 180deg / @j;
+        .loop (@i) when (@i <= @j) {            
+            &[data-progress="@{i}"]{
+                .circle {
+                    .mask.full, .fill {
+                        -webkit-transform: rotate(@increment * @i);
+                        -ms-transform: rotate(@increment * @i);
+                        transform: rotate(@increment * @i);
+                    }	
+                    .fill.fix {
+                        -webkit-transform: rotate(@increment * @i * 2);
+                        -ms-transform: rotate(@increment * @i * 2);
+                        transform: rotate(@increment * @i * 2);
+                    }
+                }
+                /*.inset .percentage .numbers {
+                    width: @i * @percentage-text-width + @percentage-text-width;
+                }*/
+            }
+            .loop(@i + 1);
+        }
+        .loop(@i);
+    }
+}
+
+.radial-progress{
+    .inset .percentage .numbers span{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0px 12px 0px 12px
+    }
+	&.yes{
+		.fill{
+			background: @color-5;
+		}
+		.inset .percentage .numbers span{
+			color: @color-5;
+		}
+		
+	}
+	&.no{
+		.fill{
+			background: @color-3;
+		}
+		.inset .percentage .numbers span{
+			color: @color-3;
+		}
+		
+	}
+	&.nutral{
+		.fill{
+			background: @color-12;
+		}
+		.inset .percentage .numbers span{
+			color: darken(@color-12, 10%);
+		}
+		
+	}
+}
+.survey-flip{
+    .form-header{
+        .form-title { 
+           margin: 7px;
+			display: inline-block;
+        }
+        &.survey-questions{
+           background: @color-2; 
+			padding: 10px 15px 0 10px;
+			
+            .answer{
+				display: inline-block;
+				float: right;
+                padding: 0px;
+				label{
+                    width:30px;
+                    height: 30px;
+                    font-size: 5px;
+                }
+            }
+        }
+    }
+    .form-body {
+		 padding: 7px 15px;
+
+        .survey-questions{
+            display: block;
+			.question,
+            .answer {
+                display:block;
+				width: 100%; 
+                padding: 8px 10px;
+				.radio-group label{
+					background: lighten(@color-16, 0%);
+					width: auto;
+					height: auto;
+					font-size: 12px;
+					border-radius: 3px;
+					padding: 3px 10px 2px;
+					line-height: 1.2;
+				}
+            }
+			.answer .radio { text-align: center;}
+			.form-element{
+				padding: 0 10px 1px;
+			}
+        }
+		.progress{
+			margin-bottom: 5px;
+			.progress-bar-success{
+				background: @color-5;
+			}
+			.progress-bar-warning{
+				background: @color-12;
+			}
+			.progress-bar-danger{
+				background: @color-3;
+			}
+		}
+    }
+}

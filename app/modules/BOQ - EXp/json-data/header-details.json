@@ -1,0 +1,72 @@
+{
+  "headerMeta": [
+    {
+      "label": "BOQ ID",
+      "key": "boqId",
+      "children": []
+    },
+    {
+      "label": "Description",
+      "key": "desc",
+      "children": []
+    },
+    {
+      "label": "Unit",
+      "key": "unit",
+      "children": []
+    },
+    {
+      "label": "Qty",
+      "key": "qty",
+      "children": []
+    },
+    {
+      "label": "Phase 1",
+      "key": "phase1",
+      "children": [
+        {
+          "label": "Block A",
+          "key": "blockA",
+          "children": []
+        },
+        {
+          "label": "Block B",
+          "key": "blockB",
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "Phase 2",
+      "key": "phase2",
+      "children": [
+        {
+          "label": "Block C",
+          "key": "blockC",
+          "children": []
+        },
+        {
+          "label": "Block D",
+          "key": "blockD",
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "Phase 3",
+      "key": "phase3",
+      "children": [
+        {
+          "label": "Block E",
+          "key": "blockE",
+          "children": []
+        },
+        {
+          "label": "Block F",
+          "key": "blockF",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

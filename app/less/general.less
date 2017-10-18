@@ -1,0 +1,200 @@
+
+
+.ngProgressLite {
+    .ngProgressLiteBar {
+        background: @color-4;
+        height: 3px;
+    }
+    .ngProgressLiteBarShadow {
+        box-shadow: 0 0 10px @color-4, 0 0 5px @color-4;
+    }
+}
+.mt-15 {
+    margin-top: 15px;
+}
+
+.zindex-1000 {
+    z-index: 1000 !important;
+}
+
+.show-hide-animate {
+    opacity: 0;
+    transition: 0.3s;
+}
+.animate-change {
+    opacity: 1 !important;
+    transition: 0.8s;
+}
+.background-image-full {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+.truncate-string {
+    width: 100%;
+    padding-right: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cursor-hand {
+    cursor: pointer;
+}
+
+/*.wifi {
+  width:.3rem;
+  height:2.2rem;
+  background:#000;
+  position:absolute;
+  top:3rem;
+  right:7rem;
+  
+}
+.wifi:before {
+  position:absolute;
+  content:"";
+  display:block;
+  width:6rem;
+  height:2.2rem;
+  background:white;
+}
+.one {
+  box-shadow:1rem -.7rem 0 0 ,1.6rem -0.0rem 0 0,2.2rem -0.0rem 0 0,2.8rem -0.0rem 0 0;
+}
+.two {
+  box-shadow:1rem -.7rem 0 0 ,1.6rem -1.3rem 0 0,2.2rem -0.0rem 0 0,2.8rem -0.0rem 0 0;
+}
+.three {
+  box-shadow:1rem -.7rem 0 0 ,1.6rem -1.3rem 0 0,2.2rem -1.8rem 0 0,2.8rem -0.0rem 0 0;
+}
+.four {
+  box-shadow:1rem -.7rem 0 0 ,1.6rem -1.3rem 0 0,2.2rem -1.8rem 0 0,2.8rem -2.20rem 0 0;
+}*/
+.signal-strength {
+   /*display: inline-block;
+   top: 19px;
+   width: 38px;
+   right: 190px;
+   position: absolute;*/
+
+    span{
+       display: block;
+       height: 14px;
+       margin-top: 5px; 
+
+       &.zero-signal{
+           background: url("../images/sig_dark_0.png") no-repeat;
+       } 
+       &.one-signal{
+        background: url("../images/sig_dark_1.png") no-repeat;
+       }
+       &.two-signal{
+        background: url("../images/sig_dark_2.png") no-repeat;
+       }
+       &.three-signal{
+         background: url("../images/sig_dark_3.png") no-repeat;
+       }
+       &.four-signal{
+           background: url("../images/sig_dark_4.png") no-repeat;
+       }
+      
+   }
+   
+   
+ }
+.my-messages.table-view{
+    background: inherit;
+}
+.my-messages-pagintation{
+    .dropdown-menu{
+        &:before{
+            top: 143px;
+        }
+        .dropdown-menu-wraper{
+            max-height: 140px !important;
+        }
+    }
+}
+.login-user-default-img{
+    .login-user-img{
+       height: inherit !important; 
+    }
+}
+.profile-picture{
+    img{
+        height: inherit !important;
+    }
+    .edit-profile{
+        position: absolute;
+        border: none;
+        width: inherit;
+        bottom: 0px;
+        text-align: right;
+        background-color: rgba(0,0,0,0.5);
+        border-bottom-right-radius: inherit;
+        border-bottom-left-radius: inherit;
+        display: none;
+        i{
+            font-size: @base-font;
+            cursor: pointer;
+        }
+        /*.tooltip{ 
+            right: 10px; 
+            .tooltiptext{
+                color: @color-1;
+                bottom: 145%;
+                background-color: @color-2;
+                &::after{
+                    left: 45%;
+                    border-color: @color-2 transparent transparent transparent;
+                }
+                    
+            }
+        }*/
+    }
+    .profile-pic-confirm{
+        position: absolute;
+        border: none;
+        width: inherit;
+        bottom: 0px;
+        background-color: rgba(0,0,0,0.5);
+        border-bottom-right-radius: inherit;
+        border-bottom-left-radius: inherit;
+        padding: 6px 5px 7px 5px;
+        div{
+            width: 50%;
+            float: left;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: @color-2;
+            }
+        }
+    }
+    &:hover{
+        .edit-profile{
+            display: block;
+        }
+    }
+}
+
+.summary-refresh {
+    padding-left: 20px;
+    margin-top: 6px;
+}
+.k-edit-cell{
+    textarea{
+        width: 95%;
+    }
+}
+.settings-page{
+    .radio{
+        input[type=radio]{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,360 @@
+/* LESS Document */
+.timesheet-approval,.wrapper-inner,.assess{
+    .no-search{
+            padding: 150px 0;
+            font-size: 19px;
+            text-transform: uppercase;
+            color: #984A55;
+            font-weight: bold;
+        }
+    .fa.fa-times{
+        
+    }
+
+}
+
+.checkbox {
+    margin: 0;
+}
+.pending-list {
+    background: @color-2;
+    padding: 0px;
+    margin-bottom:0;
+    vertical-align: middle;
+     td.emp-name p{
+                    width:150px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    display: inline-block;
+    }
+    .fa.fa-clock-o{
+        font-size: 19px;
+        color:darken(@color-18,30%);
+    }
+    .border-radius(5px);
+    .checkbox {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .emp-name,
+    .pending-week {
+        padding-right: 20px;
+        color: @color-8;
+        font-size: @base-font - 3 ;
+        vertical-align: middle;
+        span {
+            font-size: @base-font - 5;
+            line-height: 11px;
+            text-transform: uppercase;
+            opacity: 0.7;
+            padding-right: 10px;
+            vertical-align: middle;
+            padding-top: 5px;
+        }
+    }
+}
+.timesheet-lsit {
+    .pending-list {
+        margin: 0;
+        vertical-align: middle;
+        background: none;
+        .warning-notify {
+            float: none;
+        }
+    }
+    .timesheet-list-item,.absence-list-item {
+        padding-left: 20px;
+        position: relative;
+        margin-bottom: 10px;
+        &:before {
+            content: "";
+            bottom: -35px;
+            width: 1px;
+            background: @color-11;
+            position: absolute;
+            left: 5px;
+            top: 30px;
+        }
+        .bullet {
+            width: 10px;
+            height: 10px;
+            background: @color-4;
+            border: 1px solid @color-9;
+            .border-radius(50%);
+            position: absolute;
+            left: 1px;
+            top: 22px;
+            cursor: pointer;
+            &:hover {
+                background: @color-11;
+                .scale(1.8);
+                /*.transition(all 0.3s);*/
+            }
+        }
+    }
+    .timesheet-list-item:last-child:before,.absence-list-item:last-child:before {
+        background: none;
+    }
+    .timesheet-header {
+        margin-bottom: 0;
+        overflow: hidden;
+        margin-right: 10px;
+        margin-top: 10px;
+        .border-radius(8px);
+       
+        .table-view {
+            margin-bottom: 0;
+            table {
+                border: 1px solid @color-9;
+                border-bottom: none;
+                thead {
+                    td.day {
+                        /*background: none;*/
+                        border: none;
+                        input{
+                            font-size: @base-font - 1;
+                        }
+                    }
+                }
+             }
+        }
+        /*thead {
+            td {
+                background: #fff;
+            }
+        }*/
+        
+        
+    }
+    /* Timesheet- header */
+    .timesheet-content {
+        max-height: 0;
+        overflow: hidden;
+        .border-radius(8px);
+        .transition(all ease-out 0.5s);
+        .table-view {
+            margin: 0;
+            table {
+                tr {
+                    td {
+                        border: 1px solid @color-9;
+                        font-size: @base-font - 4;
+                        line-height: 1.2;
+                        &.day {
+                            p {
+                                .font-bold;
+                            }
+                            &.total.total-hrs {
+                                background: #035e66;
+                                color: @color-2;
+                                border-color: lighten(#035e66, 10%);
+                            }
+                        }
+                    }
+                    /* td */
+                    &.access-hours {
+                        td.day {
+                            p {
+                                color: #babcbd;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.timesheet-list-item.list-open,.absence-list-item.list-open {
+    .bullet {
+        background: @color-11;
+        .scale(1.2);
+    }
+    .timesheet-content {
+        max-height: 1000px;
+    }
+}
+.search-input-field {
+    width: 95%;
+    padding: 5px;
+    border: none;
+    margin: 5px 0;
+    border-radius: 5px;
+    &:hover {
+        background: #f0f0f0;
+    }
+}
+
+.kendo-date{
+    .border-radius(15px);
+    display: inline-block;
+    padding: 0 5px;
+    border: 1px solid @color-11;
+    span.k-datepicker{
+        background: none;
+        max-width: 135px;
+       .k-picker-wrap.k-state-default{
+            background: none;
+            border: none;
+           box-shadow: none;
+            .border-radius(15px);
+           &:before{
+                height: 20px;
+           }
+           &.k-state-hover{
+               .k-icon.k-i-calendar{
+                    background-position: -32px -176px;
+               }
+           }
+            .k-input{
+                background: none;
+                border-right-color: @color-11;
+                padding: 1px 0;
+            }
+           .k-select{
+               border-color: @color-11;
+               .k-icon.k-i-calendar{
+                    margin-top: -4px;
+               }
+           }
+        }
+    }
+
+}
+
+
+.warning-notify{
+     color:  @color-12;
+    float: right;
+    margin-right: 8px;
+}
+
+.no-data {
+    color: #a9b4ba;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.table-view{
+    thead > tr{
+        th{
+            p{color:#595959;}
+         }
+    }
+}
+
+.grid-margin-top{
+    margin-top:20px;
+}
+.scroll-div{
+    max-height: 300px;
+    overflow-y:auto;
+}
+.scroll-div.modal-scroll{
+    max-height:250px;
+    overflow-y:auto;
+}
+.scroll-div.message-scroll-div{
+    max-height: 420px;
+}
+.button-parent{
+    margin:0 10px 40px;
+    .button-left{ float: left; margin: 10px 0;}
+    .button-right{ float: right; margin: 10px 0;}
+}
+
+.timesheet-list-item{
+    .timesheet-header{
+        padding: 10px;
+        /*.table-view.timesheet-table-view{
+            table{
+                tbody.timesheet-table-body > tr > td{
+                    div{
+                         
+                        .text-overflow;
+                    }
+           
+                }
+            }
+            
+        }*/
+    }
+ }
+.absence-list-item{
+    .absence-header{
+    padding : 10px;
+}
+}
+
+.absence-approval{
+    .table-view table thead tr td{
+        background: #ffffff !important;
+        border:none;
+    }
+}
+
+
+
+.k-widget.k-tooltip{
+        margin-top:5px !important;
+}
+
+
+.timesheet-list-item.list-open{
+    .timesheet-header{
+        .table-view{
+            thead > tr{
+                /*border: 1px solid #000;*/
+                
+            }
+            tbody > tr > td{
+                ul {
+                    margin:0;
+                    padding: 0;
+                   li{
+                        list-style-type: none;
+                       padding: 10px;
+                    } 
+                }
+                div > .dropdown-selected-option{
+                    /* width: 120px;*/
+                     .text-overflow;
+                }
+                div.legend1,div.legend2,div.legend3{
+                    width:10px;
+                }
+                div.dropdown preFill-dropdown{
+                    width:200px;
+                    overflow: visible !important;
+                }
+            }
+        }
+    }
+    
+}
+
+.absence-list{
+    .timesheet-list-item{
+        .timesheet-header{
+            .table-view{
+                table{
+                    thead > tr > td{
+                        border-bottom: 3px solid @color-7;
+                    }
+                    tbody > tr > td{
+                        ul li{
+                            padding:1px  2px;
+                        }
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.timesheet-approval .table-view table tr td .table-view-container.absence-calendar table tr td{
+    padding: 0px;
+}
+

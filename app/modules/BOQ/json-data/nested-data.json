@@ -1,0 +1,260 @@
+{
+  "treeData": [
+    {
+      "label": "Level 1",
+      "children": [],
+      "data": {
+        "boqId": "BOQ 1",
+        "desc": "BOQ 1 Description",
+        "unit": "Unit 1",
+        "qty": "01",
+        "phase1": "Phase 11",
+        "blockA": "Block A1",
+        "blockB": "Block B1",
+        "phase2": "Phase 21",
+        "blockC": "Block C1",
+        "blockD": "Block D1",
+        "phase3": "Phase 31",
+        "blockE": "Block E1",
+        "blockF": "Block F1"
+      },
+      "id": "1",
+      "parentId": "0",
+      "open": true
+    },
+    {
+      "label": "Level 2",
+      "children": [
+        {
+          "label": "Level 2.1",
+          "children": [],
+          "data": {
+            "boqId": "BOQ 2.1",
+            "desc": "BOQ 2.1 Description",
+            "unit": "Unit 2.1",
+            "qty": "02.1",
+            "phase2": "Phase 2.12.1",
+            "blockA": "Block A2.1",
+            "blockB": "Block B2.1",
+            "blockC": "Block C2.1",
+            "blockD": "Block D2.1",
+            "phase3": "Phase 32.1",
+            "blockE": "Block E2.1",
+            "blockF": "Block F2.1"
+          },
+          "id": "2.1",
+          "parentId": "2",
+          "open": true
+        },
+        {
+          "label": "Level 2.2",
+          "children": [],
+          "data": {
+            "boqId": "BOQ 2.2",
+            "desc": "BOQ 2.2 Description",
+            "unit": "Unit 2.2",
+            "qty": "02.2",
+            "phase2": "Phase 2.22.2",
+            "blockA": "Block A2.2",
+            "blockB": "Block B2.2",
+            "blockC": "Block C2.2",
+            "blockD": "Block D2.2",
+            "phase3": "Phase 32.2",
+            "blockE": "Block E2.2",
+            "blockF": "Block F2.2"
+          },
+          "id": "2.2",
+          "parentId": "2",
+          "open": true
+        }
+      ],
+      "data": {
+        "boqId": "BOQ 2",
+        "desc": "BOQ 2 Description",
+        "unit": "Unit 2",
+        "qty": "02",
+        "phase2": "Phase 22",
+        "blockA": "Block A2",
+        "blockB": "Block B2",
+        "blockC": "Block C2",
+        "blockD": "Block D2",
+        "phase3": "Phase 32",
+        "blockE": "Block E2",
+        "blockF": "Block F2"
+      },
+      "id": "2",
+      "parentId": "0",
+      "open": true
+    },
+    {
+      "label": "Level 3",
+      "children": [],
+      "data": {
+        "boqId": "BOQ 3",
+        "desc": "BOQ 3 Description",
+        "unit": "Unit 3",
+        "qty": "03",
+        "phase2": "Phase 33",
+        "blockA": "Block A3",
+        "blockB": "Block B3",
+        "blockC": "Block C3",
+        "blockD": "Block D3",
+        "phase3": "Phase 33",
+        "blockE": "Block E3",
+        "blockF": "Block F3"
+      },
+      "id": "3",
+      "parentId": "0",
+      "open": true
+    },
+    {
+      "label": "Level 4",
+      "children": [
+        {
+          "label": "Level 4.1",
+          "children": [],
+          "data": {
+            "boqId": "BOQ 4.1",
+            "desc": "BOQ 4.1 Description",
+            "unit": "Unit 4.1",
+            "qty": "04.1",
+            "phase2": "Phase 4.14.1",
+            "blockA": "Block A4.1",
+            "blockB": "Block B4.1",
+            "blockC": "Block C4.1",
+            "blockD": "Block D4.1",
+            "phase3": "Phase 4.14.1",
+            "blockE": "Block E4.1",
+            "blockF": "Block F4.1"
+          },
+          "id": "4.1",
+          "parentId": "4",
+          "open": false
+        },
+        {
+          "label": "Level 4.2",
+          "children": [
+            {
+              "label": "Level 4.2.1",
+              "children": [],
+              "data": {
+                "boqId": "BOQ 4.2.1",
+                "desc": "BOQ 4.2.1 Description",
+                "unit": "Unit 4.2.1",
+                "qty": "04.2.1",
+                "phase2": "Phase 4.2.1",
+                "blockA": "Block A4.2.1",
+                "blockB": "Block B4.2.1",
+                "blockC": "Block C4.2.1",
+                "blockD": "Block D4.2.1",
+                "phase3": "Phase 4.2.1",
+                "blockE": "Block E4.2.1",
+                "blockF": "Block F4.2.1"
+              },
+              "id": "4.2.1",
+              "parentId": "4.2",
+              "open": false
+            },
+            {
+              "label": "Level 4.2.2",
+              "children": [],
+              "data": {
+                "boqId": "BOQ 4.2.2",
+                "desc": "BOQ 4.2.2 Description",
+                "unit": "Unit 4.2.2",
+                "qty": "04.2.2",
+                "phase2": "Phase 4.2.2",
+                "blockA": "Block A4.2.2",
+                "blockB": "Block B4.2.2",
+                "blockC": "Block C4.2.2",
+                "blockD": "Block D4.2.2",
+                "phase3": "Phase 4.2.2",
+                "blockE": "Block E4.2.2",
+                "blockF": "Block F4.2.2"
+              },
+              "id": "4.2.2",
+              "parentId": "4.2",
+              "open": false
+            }
+          ],
+          "data": {
+            "boqId": "BOQ 4.2",
+            "desc": "BOQ 4.2 Description",
+            "unit": "Unit 4.2",
+            "qty": "04.2",
+            "phase2": "Phase 4.2",
+            "blockA": "Block A4.2",
+            "blockB": "Block B4.2",
+            "blockC": "Block C4.2",
+            "blockD": "Block D4.2",
+            "phase3": "Phase 4.2",
+            "blockE": "Block E4.2",
+            "blockF": "Block F4.2"
+          },
+          "id": "4.2",
+          "parentId": "4",
+          "open": false
+        },
+        {
+          "label": "Level 4.3",
+          "children": [],
+          "data": {
+            "boqId": "BOQ 4.3",
+            "desc": "BOQ 4.3 Description",
+            "unit": "Unit 4.3",
+            "qty": "04.3",
+            "phase2": "Phase 4.3",
+            "blockA": "Block A4.3",
+            "blockB": "Block B4.3",
+            "blockC": "Block C4.3",
+            "blockD": "Block D4.3",
+            "phase3": "Phase 4.3",
+            "blockE": "Block E4.3",
+            "blockF": "Block F4.3"
+          },
+          "id": "4.3",
+          "parentId": "4",
+          "open": false
+        }
+      ],
+      "data": {
+        "boqId": "BOQ 4",
+        "desc": "BOQ 4 Description",
+        "unit": "Unit 4",
+        "qty": "04",
+        "phase2": "Phase 44",
+        "blockA": "Block A4",
+        "blockB": "Block B4",
+        "blockC": "Block C4",
+        "blockD": "Block D4",
+        "phase3": "Phase 44",
+        "blockE": "Block E4",
+        "blockF": "Block F4"
+      },
+      "id": "4",
+      "parentId": "0",
+      "open": true
+    },
+    {
+      "label": "Level 5",
+      "children": [],
+      "data": {
+        "boqId": "BOQ 5",
+        "desc": "BOQ 5 Description",
+        "unit": "Unit 5",
+        "qty": "05",
+        "phase2": "Phase 55",
+        "blockA": "Block A5",
+        "blockB": "Block B5",
+        "blockC": "Block C5",
+        "blockD": "Block D5",
+        "phase3": "Phase 55",
+        "blockE": "Block E5",
+        "blockF": "Block F5"
+      },
+      "id": "5",
+      "parentId": "0",
+      "open": true
+    }
+  ]
+}

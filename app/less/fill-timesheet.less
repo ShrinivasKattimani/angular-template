@@ -1,0 +1,232 @@
+/* LESS Document */
+
+.legends {
+    padding: 15px 15px;
+    text-align: right;
+    &.text-left {
+        text-align: left;
+        padding-left: 0;
+    }
+    div {
+        display: inline-block;
+        margin: 0 5px;
+        vertical-align: middle;
+        font-size: @base-font - 4;
+        color: @color-10;
+        text-transform: uppercase;
+        .legend-color {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            margin-right: 7px;
+            .border-radius(50%);
+            &.weekends {
+                background: @color-20;
+            }
+            &.leave {
+                background: @color-3;
+            }
+            &.holiday {
+                background: @color-4;
+            }
+            &.today {
+                background: @color-13;
+            }
+            
+        }
+    }
+}
+.bottom-details {
+    padding: 20px 0;
+    border-bottom: 1px solid @color-7;
+}
+
+/* -- Bottom details */
+
+.total-hours {
+    p {
+        display: inline-block;
+        padding-left: 20px;
+        margin: 0;
+    }
+    span {
+        font-ize: 1.5em;
+        font-weight: bold;
+        color: @color-5;
+        padding-left: 10px;
+        display: inline-block;
+    }
+}
+
+/*- Tatal hours */
+
+.bottom-bar {
+    padding: 20px 0;
+    .btn + .btn {
+        margin: 0 0 0 15px;
+    }
+}
+.table-view table tr td.day.total.total-hrs {
+    background: #035e66;
+    color: @color-2;
+    border-color: lighten(#035e66, 10%);
+}
+.table-view {
+    .period {
+       /* overflow: hidden;*/
+        .dropdown.tj-select-options {
+                .dropdown-selected-option {
+                    display: inline-block;
+                    width:auto;
+                    min-width:auto;
+                    
+                    /*min-width: 55px;
+                    width:9em; */
+                    /*@media (min-width: 1200px) {
+                        min-width:163px;
+                    }*/
+                    /*overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;*/
+                }
+        }
+    }
+}
+hr {
+    border-color: @color-7;
+}
+#timesheet-table-container {
+    position: relative;
+    opacity: 0.25;
+    transition: .2s;
+    .dropdown-menu-wraper {
+        min-width: 200px;
+        width:200px;
+    }
+  
+    form {
+        .table-view {
+            td {
+                border: 1px solid @color-9 !important;  
+            }
+        }
+    }  
+}
+.link1{
+    float: right;
+    text-decoration: none;
+    padding: 7px 28px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.timesheet-popover{
+    .popover.popover-comments{
+        width:240px;
+        left:-74px;
+        .btn.update-btn,.btn.cancel-btn{
+            padding: 7px 20px;
+        }
+    }  
+}
+.popover.popover-comments{
+    bottom:35px;
+    top: inherit;
+    padding:10px;
+    width:230px;
+    left:-71px;
+    .arrow {
+        left:41%;
+    }
+    textarea{
+        resize: none;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid @color-7;
+        width:100%;
+    }
+    .form-group{
+        /*display: inline-block;*/
+       
+    }
+     .btn{
+            padding: 7px 20px; 
+            float: left;
+        }
+    .btn.update-btn,.btn.cancel-btn{
+         padding: 7px 12px; 
+    }
+    .btn.btn-primary{
+        margin-left: 9px;
+        margin-right: 15px;
+    }
+}
+.comments-tooltip{
+    .tooltip-comment{
+        background: rgba(0,0,0,0.6) none repeat scroll 0 0;
+        border: none;
+        display: none;
+        min-width:120px;
+        padding: 5px;
+        bottom: 35px;
+        top: initial;
+        .arrow::after{
+            border-top-color: rgba(0,0,0,0.3);
+        }
+        .arrow{
+            left:20%;
+        }
+    }
+    .comment-text{
+        color:@color-2;
+        word-wrap: break-word;
+    }
+    
+    
+    &:hover{
+        .tooltip-comment{
+            display: block;
+    
+        }
+    }
+    .popover.top {
+        margin-top: -18px;
+    } 
+}
+.fa-comment-black{
+    color: @color-5 !important;
+}
+/*.table-view.ng-scope{
+  animation: added 1s 1;
+}
+
+@keyframes added {
+  0% {
+    background-color: #808a91;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+.table-view.ng-scope.removed{
+  animation: removed 1s 1;
+}
+@keyframes removed {
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #808a91;
+  }
+}*/
+
+@media (min-width:320px) and (max-width:1200px){
+   
+    .timesheet-approval{
+        .table-view-container button.leave-btn p{
+           font-size:@base-font - 5 !important;
+        }
+    }
+    
+}

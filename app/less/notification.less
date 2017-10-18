@@ -1,0 +1,146 @@
+.notification-table{
+    table{
+        border:none;
+        width: 100%;
+        tbody{
+            border:none;
+            tr{
+                
+                th{
+                    background:/*@color-7*/#EFF4F6;
+                    color:lighten(@color-21,10%);
+                    font-size: @base-font - 3;
+                    font-weight: normal;
+                    line-height: 1.6em;
+                    padding: 10px;
+                    text-transform: uppercase;
+                    
+                }
+                td{
+                    font-size: @base-font - 3;
+                    padding: 10px;
+                }
+                td.x3w{
+                    padding-left: 20px;
+                    font-size: 15px;
+                }
+            }
+            /*tr:nth-child(odd){
+                background:#EFF4F6;
+            }*/
+            tr:nth-child(even){
+                background:#fff;
+            }
+        }
+       
+        
+    }
+}
+.no-notification-details{
+    padding: 0px 10px 5px;
+    p{
+        background: @color-2;
+        padding: 10px;
+        color: @color-3;
+    }
+} 
+
+.list-item{
+	padding: 0;
+	 list-style: none;
+	li{
+		padding-bottom: 5px;
+		a{
+			color: @color-8;
+			text-decoration: none;
+			&:hover{
+				color: @color-1;
+			}
+		}
+	}
+}
+.no-result{
+	color: @color-23;
+	font-weight: 600;
+}
+
+
+#my_custom_menu .panel{
+	box-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
+.sticky-widgets-bar{
+	position: fixed;
+    right: 0px;
+    top:100px;
+    z-index: 1000;
+	ul{
+		list-style-type: none;
+		padding: 0;
+		li{
+			margin-bottom: 2px;
+			position: relative;
+			a{
+				display: block;
+				background: #86414a;
+				color: @color-2;
+				border-radius: 5px 0 0 5px;
+				padding: 5px;
+				width: 40px;
+				height: 40px;
+				text-align: center;
+				
+			}
+			&.move-widget{
+				position: absolute;
+				top: 0px;
+				width: 100%;
+				transition: top 0.3s;
+				a{
+					background: darken(#86414a, 15%);
+					cursor: move;
+					height: 40px;
+				}
+				.fa{
+					.rotate(45deg);
+					cursor: move;
+				}
+			}
+		}
+		&:hover{
+			li.move-widget{
+				top: -30px;
+			}
+		}
+	}
+}
+.widget-wrapper{
+	background: @color-2;
+	position: absolute;
+	left: auto;
+	width: 300px;
+	right: -300px;
+	top: 0;
+	transition: right 0.3s;
+	z-index: 5;
+	box-shadow: 0 0 5px @color-8;
+	button.close{
+		position: absolute;
+		left: 0;
+		background: #86414a;
+		color: @color-2;
+		border-radius: 5px 0 0 5px;
+		text-shadow: none;
+		opacity: 1;
+		padding: 7px 10px;
+        transition: none;
+		
+	}
+	&.open{
+		right: 0;
+		button.close{
+			left: -30px;
+		}
+	}
+	
+}

@@ -1,0 +1,809 @@
+.mobilization-grid,
+.allocation-grid {
+  .k-grid .k-grid-content {
+    /* max-height: 480px;
+        height: 480px;*/
+    max-height: 200px;
+    height: 200px;
+  }
+}
+
+.employee-list {
+  .k-grid-content {
+    /*max-height: 480px;
+      height: 480px; */
+    max-height: 240px;
+    height: 240px;
+  }
+}
+
+.modal {
+  .table-view .k-grid .k-grid-content {
+    height: 200px;
+  }
+}
+
+/* LESS Document */
+.k-block, .k-widget, .k-popup, .k-content, .k-toolbar, .k-dropdown .k-input{
+    color: @color-8;
+}
+
+.k-header{
+    border-color: transparent;
+    background-color: transparent;
+}
+.k-autocomplete.k-state-default, .k-datepicker .k-autocomplete.k-state-default.k-state-hover, .k-picker-wrap.k-state-default, .k-numeric-wrap.k-state-default, .k-dropdown-wrap.k-state-default{
+    border-color: transparent;
+}
+.k-loading-mask{
+  display:none;
+}
+
+.k-grouping-header {
+	left: 15px;
+	position: absolute;
+	right: 250px;
+	top: -41px;
+	border: none;
+	color: @text-color;
+
+	.k-group-indicator {
+		background: @color-8;
+		.border-radius(12px);
+		border: none;
+        padding: 1px 3px 1px 0;
+		text-transform: uppercase;
+		.font-normal;
+		a {
+			color: #fff;
+            font-size: 10px;
+		}
+		.k-button span.k-group-delete,
+		.k-button span.k-group-delete:hover {
+			background-position: -47px -17px;
+		}
+	}
+}
+
+.k-list li.k-state-selected {
+	background: @color-11;
+}
+.k-list{
+  li{
+    p{
+      font-weight: normal;
+      b{
+        font-weight: bold;
+      }
+    }
+  }
+}
+.k-list-container {
+	padding: 0;
+	.k-state-selected {
+		border-color: transparent;
+		margin-top: -2px;
+		border-radius: 5px;
+	}
+    .k-list{
+        li.k-item{
+            padding: 4px 3px !important;
+            line-height: 1.3;
+            &:hover, &.k-state-hover{
+                background-color: darken(@color-2, 10%) !important;
+            }
+        }
+     }
+}
+.k-multiselect-wrap .k-input {
+	font-size: 12px;
+	color:@color-8;
+	.font-light;
+	margin: 7px 0;
+	padding: 0;
+	text-indent: 0;
+}
+div.k-grid-footer,
+div.k-grid-header {
+	border: none;
+}
+.table-view {
+    #exportAttachmentsTable{
+        .k-grid-content, .k-grid-header-wrap{
+            .k-group-cell{
+              overflow: visible;
+            }
+        }
+    }
+	.k-grid.k-widget.k-reorderable {
+		border-left: 1px solid #cccccc !important;
+		.theme-01 .secondary-details.revision .table-view table[role="treegrid"] td {}
+	}
+	.k-grid.k-widget.k-reorderable {
+		border-left: 1px solid #cccccc !important;
+		.theme-01 .secondary-details.revision .table-view table[role="treegrid"] td {}
+	}
+	#workforceTable {
+		border: none;
+	}
+	.k-grid-header {
+		border-bottom: 1px solid @table-border-color;
+	}
+	table {
+		border: none;
+		thead tr {
+			th {
+				border-width: 1px 1px 0 0;
+				padding: 4px 15px;
+				input {
+					padding: 4px 0;
+				}
+			}
+		}
+		tr {
+			td {
+				border-top: 0px!important;
+                .pull-right.glyphicon.glyphicon-menu-down {
+                    margin-top: -5px;
+                    position: absolute;
+                    right: 15px;
+                    top: 50%;
+                }
+			}
+		}
+	}
+	th {
+		a.k-header-column-menu,
+		a.k-link {
+			margin: 0;
+			padding: 0;
+			font-size: 12px;
+		}
+		button.k-button {
+			width: 30px;
+			height: 30px;
+			margin: 0;
+			span.k-icon {
+				margin-top: -6px;
+			}
+		}
+	}
+	tr.k-filter-row {
+		th {
+			input {
+				text-transform: none;
+			}
+		}
+	}
+	.k-grid-header th.k-header {
+		vertical-align: middle;
+		> .k-link {
+			margin: 0;
+			padding: 0;
+			color: @text-color;
+			font-size: 12px;
+			font-weight: 600;
+		}
+	}
+	> .k-grid {
+		background: none;
+	}
+	.k-grid .k-pager-wrap.k-grid-pager {
+		left: 0;
+		right: 0;
+		width: auto;
+		font-size: 12px;
+	}
+	tr.k-alt.k-state-selected,
+	tr.k-state-selected {
+		background: #eff3f6;
+		input[type='text'],
+		input[type='text']:hover {
+			background: none;
+			border-color: @table-border-color;
+		}
+	}
+	.k-autocomplete.k-state-default,
+	.k-autocomplete.k-state-focused,
+	.k-autocomplete.k-state-hover {
+		border-color: @table-border-color;
+		background: none;
+		input[type='text'],
+		input[type='text']:hover {
+			background: none !important;
+		}
+	}
+	.k-dropdown-wrap.k-state-hover {
+		background-color: lighten(@color-8, 40%);
+		border-color: lighten(@color-8, 30%);
+	}
+	.table-view tr.k-state-selected input[type="text"],
+	.theme-01 .table-view tr.k-alt.k-state-selected input[type="text"],
+	.theme-01 .table-view tr.k-alt.k-state-selected input[type="text"]:hover,
+	.theme-01 .table-view tr.k-state-selected input[type="text"]:hover {
+		background: none;
+	}
+	.k-state-selected .k-i-arrow-s {
+		background-position: 0 -35px;
+	}
+	.k-filtercell > span {
+		padding-right: 40px;
+	}
+	.k-filter-row .k-dropdown-operator {
+		right: 0;
+	}
+	.k-grid-content {
+		height: 335px !important;
+	}
+	.k-grid .k-grid-content {
+		background: #fff;
+	}
+	.k-grouping-row {
+		background: #eff3f6;
+		td {
+			background: none;
+			p.k-reset {
+				color: @gray-dark;
+				.font-light;
+				font-weight: normal;
+				.k-icon {
+					background: none;
+					&.k-i-expand {
+						&:before {
+							content: "\e252";
+							font-family: 'Glyphicons Halflings';
+							font-size: 12px;
+							line-height: 1.2;
+							display: inline-block;
+							.rotate(-90deg);
+							color: @gray-dark;
+						}
+					}
+					&.k-i-collapse {
+						&:before {
+							content: "\e252";
+							font-family: 'Glyphicons Halflings';
+							font-size: 12px;
+							line-height: 1.2;
+							display: inline-block;
+							color: @gray-dark;
+						}
+					}
+				}
+			}
+		}
+	}
+	td[role="gridcell"] span {
+		white-space: nowrap;
+		color: @text-color;
+	}
+}
+.k-list {
+	max-height: 200px;
+	overflow: auto;
+}
+/* ------- Pagination -------- */
+.k-grid .k-grid-pager {
+	background: @color-9 !important;
+	border-top: 1px solid @color-8;
+	.font-bold;
+	.k-link {
+		cursor: pointer;
+		border-color: lighten(@color-8, 30%) !important;
+		font-size: 11px;
+		&:hover {
+		}
+		&.k-state-disabled {
+			opacity: 0.5;
+			border-color: @color-6;
+			&:hover {
+				background: none;
+				border-color: @color-6;
+				cursor: not-allowed;
+			}
+		}
+		.k-icon {
+			&.k-i-arrow-e,
+			&.k-i-arrow-w,
+			&.k-i-seek-e,
+			&.k-i-seek-w {
+				margin-top: -3px;
+			}
+		}
+	}
+	.k-pager-numbers {
+		li {
+			.k-state-selected {
+				background: @color-11;
+				border-color: @color-6;
+				line-height: 2em;
+				font-size: 10px;
+			}
+			/* Selected page*/
+		}
+	}
+}
+.k-grid .k-pager-wrap {
+	.k-pager-sizes {
+		font-size: 12px;
+		margin-top: -2px;
+		.k-widget{
+			margin-right: 10px;
+		}
+	}
+	.k-header {
+		font-size: 12px;
+	}
+}
+/*.k-grid-pager{
+	background:@color-9 !important;
+	padding:5px 0;
+	z-index:1 !important;
+	.k-link{
+		border:none;
+		float:none;
+		&.k-state-disabled{
+			opacity:0.3;
+		}
+		&:hover{
+			background:none;
+		}
+	}
+	.k-pager-input {
+		padding: 0 5px;
+	}
+	.k-pager-numbers, .k-pager-input.k-label{
+		float:none;
+	}
+	.k-pager-sizes {
+		text-align:left;
+
+	}
+	.k-pager-input .k-textbox{
+		height:26px;
+		top:-1px;
+	}
+	.k-icon{
+
+		&.k-i-arrow-e{
+			 &:before{
+				content:"\e250";
+				font-family: 'Glyphicons Halflings';
+				font-size:14px;
+				line-height:1.2;
+			 }
+		}
+		&.k-i-arrow-w{
+			&:before{
+				content:"\e251";
+				font-family: 'Glyphicons Halflings';
+				font-size:14px;
+				line-height:1.2;
+			}
+		}
+		&.k-i-seek-e{
+			&:before{
+				content:"\e077";
+				font-family: 'Glyphicons Halflings';
+				font-size:14px;
+				line-height:1.2;
+			}
+		}
+		&.k-i-seek-w{
+			&:before{
+				content:"\e069";
+				font-family: 'Glyphicons Halflings';
+				font-size:14px;
+				line-height:1.2;
+			}
+		}
+	}
+}
+*/
+/* ------------ Send Popup styles ----------- */
+.form-contents {
+	.k-widget.k-multiselect.k-header,
+	.k-widget.k-multiselect.k-header:hover {
+		border: none;
+		background-color: transparent;
+	}
+	.k-multiselect-wrap {
+		ul {
+			li.k-button,
+			li.k-state-hover {
+				.border-radius(15px);
+				background: @color-10;
+				color: #fff;
+				border: none;
+				margin-right: 10px;
+				font-size: 12px;
+				padding: 2px 20px 2px 10px;
+				.k-select {
+					.k-icon.k-i-close {
+						background-position: -50px -16px;
+						.scale(0.8);
+						top: -1px;
+						margin-left: 5px;
+					}
+					//                    &:hover{
+					//                        background:rgba(0, 0, 0, 0) url("../images/icon-calendar.png") no-repeat scroll center center
+					//                    }
+					//                    &:hover{
+					//                        background:rgba(0, 0, 0, 0) url("../images/icon-calendar.png") no-repeat scroll center center
+					//                    }
+				}
+			}
+		}
+	}
+}
+.k-list-container.k-popup {
+	box-shadow: none;
+	border: 1px solid #efefef;
+	.border-radius(3px);
+	li.k-item {
+		border: none;
+		font-size: 12px;
+		padding: 0 8px;
+		&.k-state-focused,
+		&.k-state-hover {
+			border: none;
+			background: none;
+			font-size: 12px;
+			padding: 0 8px;
+			cursor: pointer;
+		}
+	}
+}
+/* -------- Kendo UI footer In modal view ---------- */
+.modal {
+	.table-view .k-grid .k-grid-content {
+		height: 200px;
+	}
+	.k-grid-pager {
+		bottom: -43px !important;
+		left: -1px !important;
+		right: -1px !important;
+		position: absolute !important;
+	}
+}
+.layout-02 .table-view .k-grid .k-pager-wrap.k-grid-pager {
+	left: 70px;
+}
+
+.k-dropdown-wrap{
+    height: 30px;
+}
+
+.k-autocomplete.k-state-default,
+.k-autocomplete.k-state-hover .k-picker-wrap.k-state-default,
+.k-dropdown-wrap.k-state-default,
+.k-numeric-wrap.k-state-default {
+	border-color: rgba(0, 0, 0, 0);
+}
+.tab-container .tab-content .form-element .placeholder-label .k-state-hover {
+	background: rgba(0, 0, 0, 0);
+	border-color: rgba(0, 0, 0, 0);
+}
+.k-state-default > .k-select {
+	border-color: rgba(0, 0, 0, 0);
+}
+.tab-container .tab-content .form-element .placeholder-label .k-state-hover .k-icon {
+	background-position: 0 -35px;
+}
+/* --------- Kendo Date Picker ------------ */
+.k-datepicker {
+	.k-picker-wrap.k-state-hover,
+	.k-picker-wrap.k-state-hover.k-state-default,
+	.k-state-default, .k-state-focused {
+		background-color: transparent;
+		//border-color: transparent;
+		.k-select {
+			border-color: transparent;
+			.k-icon.k-i-calendar {
+				background: url("../images/icon-calendar.png") no-repeat center;
+			}
+		}
+	}
+	.k-picker-wrap.k-state-default.k-state-hover {
+		border-color: transparent;
+	}
+
+}
+
+.k-widget.k-numerictextbox{
+    .k-numeric-wrap.k-state-default{
+        background-color: transparent;
+        padding: 0;
+        input{
+            height: 25px;
+        }
+        .k-select{
+          right: 4px !important;
+        }
+    }
+
+}
+.table-view {
+	tr.k-state-selected {
+		input[type="text"],
+		input[type="text"]:hover {
+			background: none;
+		}
+		.icon.option-horizontal {
+			position: absolute;
+			right: 8px;
+			top: 6px;
+			cursor: pointer;
+		}
+	}
+}
+// renove top arrow tooltip
+.k-callout-n {
+	border-bottom-color: transparent;
+}
+.table-view {
+	.k-grid.k-widget.k-reorderable {
+		border-left: 1px solid #cccccc !important;
+		table[role="treegrid"] td {
+			padding: 2px 15px;
+		}
+		.k-auto-scrollable {
+			.k-detail-row {
+				td {
+					border: 0 none;
+				}
+				.k-detail-cell {
+					padding: 0;
+					.k-grid-content table[role="grid"] {
+						border-spacing: 0 5px;
+						padding: 4px 7px;
+						border-collapse: separate;
+					}
+				}
+			}
+			.k-master-row {
+				.k-icon.k-minus {
+					transform: rotate(47deg);
+				}
+			}
+		}
+	}
+}
+.form-element {
+	.k-widget.k-datepicker.k-header {
+		.k-picker-wrap.k-state-default.k-state-hover {
+			.k-icon.k-i-calendar {
+				background: rgba(0, 0, 0, 0) url("../images/icon-calendar.png") no-repeat scroll center center;
+			}
+		}
+	}
+	.k-dropdown-wrap {
+		.k-input {
+			text-indent: 0;
+		}
+	}
+	.k-numerictextbox {
+		.k-numeric-wrap.k-state-default:hover {
+			.k-select .k-link span.k-i-arrow-n {
+				background-position: 0 -3px !important;
+			}
+		}
+	}
+	.k-i-arrow-s {
+		background-position: 0 -35px !important;
+	}
+	.dropdown-list-sm {
+		border-radius: 5px;
+		border: none;
+	}
+}
+.k-grid.k-widget.k-reorderable {
+	border-left: 1px solid #cccccc !important;
+	table[role="treegrid"] td {
+		padding: 2px 15px;
+	}
+	.k-auto-scrollable {
+		.k-detail-row {
+			td {
+				border: 0 none;
+			}
+			.k-detail-cell {
+				padding: 0;
+				.k-grid-content table[role="grid"] {
+					border-spacing: 0 5px;
+					padding: 4px 7px;
+					border-collapse: separate;
+				}
+			}
+		}
+		.k-master-row {
+			.k-icon.k-minus {
+				transform: rotate(47deg);
+			}
+		}
+	}
+}
+.form-element {
+	.k-widget.k-datepicker.k-header {
+		.k-picker-wrap.k-state-default.k-state-hover {
+			.k-icon.k-i-calendar {
+				background: rgba(0, 0, 0, 0) url("../images/icon-calendar.png") no-repeat scroll center center;
+			}
+		}
+	}
+    .k-dropdown{
+        width: 100%;
+    }
+	.k-dropdown-wrap {
+		.k-input {
+			text-indent: 0;
+		}
+	}
+	.k-numerictextbox {
+		.k-numeric-wrap.k-state-default:hover {
+			.k-select .k-link span.k-i-arrow-n {
+				background-position: 0 -3px !important;
+			}
+		}
+	}
+	.k-i-arrow-s {
+		background-position: 0 -35px !important;
+        opacity: 0.6;
+	}
+	.dropdown-list-sm {
+		border-radius: 5px;
+		border: none;
+	}
+	.kendoEditIcon {
+		float: right;
+		font-size: 10px;
+		vertical-align: middle;
+		padding-right: 2px;
+		padding-top: 5px;
+	}
+}
+
+.k-state-disabled {
+  border-color: transparent;
+
+}
+
+.k-dropdown.form-control{
+    font-size: 12px;
+
+}
+.k-dropdown[aria-activedescendant]{
+    .k-input{
+        color: @color-1;
+    }
+}
+
+/* ---------------------- Editor ---------------- */
+.k-editor-toolbar{
+    .k-tool-group{
+        a.k-tool {
+            &.k-state-hover, &.k-state-selected{
+                background: lighten(@color-1, 50%);
+                color: @color-8;
+                .k-tool-icon{
+                    color: @color-8;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* LESS Document */
+
+.k-grouping-header {
+  left: 15px;
+padding:0;
+  position: absolute;
+  right: 800px;
+  top: -40px;
+  border: none;
+  font-weight: 400;
+  color: @color-8;
+  font-size: 12px;
+  .k-group-indicator {
+    background: @color-10;
+    .border-radius(15px);
+    border: none;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    .font-medium;
+    a {
+      color: @color-2;
+    }
+    .k-button span.k-group-delete,
+    .k-button span.k-group-delete:hover {
+      background-position: -47px -17px;
+        .k-ct-popup{
+            .k-ct-cell{
+            border-color: @color-6;
+            &.k-state-selected{
+            background: @color-6;
+            }
+            }
+        }
+      }
+    }
+}
+
+.k-grid-header th.k-header.k-hierarchy-cell{ overflow: visible;}
+
+#evmsID .k-grid .k-pager-wrap.k-grid-pager {
+  position:relative;
+}
+
+/*----------- EVMS Styles ----------- --*/
+#evmsID.table-view{
+    tr.k-master-row{
+        td{
+            padding: 8px 15px;
+            &.k-hierarchy-cell{
+                .k-icon{
+                    margin-left: -8px;
+                }
+            }
+        }
+    }
+    .table-view{
+        div[kendo-grid="subGrid"] {
+            table[role="grid"]{
+                padding: 0;
+                border-spacing: 0;
+                tr{
+                    td{
+                        border: solid @table-border-color;
+                        border-width: 0 1px 1px 0;
+                        padding: 8px 15px;
+                        height:36px;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+/* ----------- Kendo Popup ------------ */
+.k-widget.k-window{
+    padding-top: 25px !important;
+    .k-window-titlebar{
+        position: relative;
+        height: auto;
+        .font-bold;
+        border-bottom: 1px solid @table-border-color;
+        padding: 8px 15px;
+        margin-top: -20px !important;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: @color-1;
+        .k-window-title{
+            position: relative;
+        }
+        .k-window-actions{
+            right: 15px;
+        }
+    }
+    .k-link{
+        &.k-state-hover{
+             border: none;
+            .k-icon{
+                background-color: @color-8;
+            }
+        }
+    }
+    .k-button{
+        &:hover{
+            background: @color-8;
+            color: @color-2;
+        }
+    }
+
+}
+

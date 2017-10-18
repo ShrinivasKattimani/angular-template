@@ -1,0 +1,217 @@
+/*
+.btn-default
+.btn-primary
+.btn-success
+.btn-info
+.btn-warning
+.btn-danger
+.btn-link
+*/
+
+.btn{
+	border-radius:  20px;
+	padding:7px 20px;
+	line-height:1;
+	text-transform:uppercase;
+	background:none;
+	font-size:@base-font - 3;
+    color:@color-10;
+	&:active{
+		box-shadow:none;
+		outline:none !important;
+		border-color:transparent;
+	}
+	&:focus {
+		outline:none !important;
+		border-color:transparent;
+	}
+	&.btn-success{
+		border-width:1px;
+		border-style:solid;	        
+		background:@color-5;
+		border-color:@color-5 !important;
+		color:@color-2;
+        &.btn-line{
+			background:none;
+			color:@color-5;
+		}
+        .fa {
+            color:@color-2 !important;
+        }
+	}
+	&.btn-more{
+		font-size:@base-font + 8;
+		padding:0 0 0 10px;
+		margin-left:0;
+        color:@color-5;
+	}
+	&.btn-default{
+		border-width:1px;
+		border-style:solid;        
+		background:@color-10;
+		border-color:@color-10;	
+		color:@color-2;
+        &.btn-line{
+			background:none;
+			color:@color-10;
+		}
+        .fa {
+            color:@color-2 !important;
+        }
+        &.active {
+            background:rgba(0,0,0,0.1);
+        }
+	}
+	&.btn-primary{
+		border-width:1px;
+		border-style:solid;
+        background:@color-4;
+		border-color:@color-4;	
+		color:@color-2;
+        margin-right:5px;
+		&.btn-line{
+			background:none;
+			color:@color-4;
+		}
+        .fa {
+            color:@color-2 !important;
+        }
+	}
+	&.btn-secondary{
+		border-width:1px;
+		border-style:solid;
+        background:@color-10;
+		border-color:@color-10;	
+		color:@color-2;
+		&.btn-line{
+			background:none;
+			color:@color-10;
+		}
+        .fa {
+            color:@color-2 !important;
+        }
+        
+	}
+
+	&.btn-error{
+		border-width:1px;
+		border-style:solid;
+		background:@color-3;
+		border-color:@color-3;	
+		color:@color-2;
+		&.btn-line{
+			background:none;
+			color:@color-3;
+		}
+        .fa {
+            color:@color-2 !important;
+        }
+	}
+    
+    &.btn-clear{
+        opacity: 0.7;
+        border: none; 
+        img{
+            .scale(0.7);
+            margin: -3px 0 0 8px;   
+        }
+    }
+    &.btn-icon {
+        padding: 2px;
+    }
+    &.btn-round{
+             
+            border:none;
+             
+    }
+}
+.btn-icon.non-attached-btn {
+    font-size: @base-font - 3;
+    padding: 0;
+}
+.btn-icon {
+    padding: 5px;
+    font-size:@base-font;
+    
+    .fa {
+        /*color:lighten(@gray-base, 40%);*/
+        color:@color-25;
+    }
+    .fa.fa-exclamation-triangle{
+        color:@color-12;
+    }
+    .fa.fa-exclamation-circle{
+        color:darken(@color-5,10%);
+    }
+}
+.btn-icon-text {
+   padding: 0 5px;  
+   margin: 0;  
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: @base-font - 4;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+.btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.button-one{
+    float:right;
+    background:#035E66;
+    border:none;
+    padding:7px 20px;
+    font-size:@base-font - 2;
+    border-radius: 20px;
+    color:@color-2;
+    text-transform: uppercase;
+    &:focus{
+        outline:none;
+    }
+}
+
+.btn.btn-phone{
+    padding:7px 18px !important;
+}
+.btn.btn-full{
+    width: 100%;
+}
+.btn.no-radius {
+    border-radius: 0;
+}
+
+/*.info-button{
+    background:@color-15;
+    color:@color-2;
+    padding:7px;
+    border:none;
+    border-radius:20px;
+    margin-right:5px;
+}
+.help-button{
+    background:@color-23;
+    color:@color-2;
+    padding:7px;
+    border:none;
+    border-radius:20px;
+}*/
+
+.icon-button-group {
+    span{
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    .btn {
+        padding: 0;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+}
+
+

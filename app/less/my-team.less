@@ -1,0 +1,178 @@
+.d3-context-menu ul li.is-disabled.is-header{
+    color:#888 !important;
+}
+
+
+#team-chart {
+    text-align: center;
+    background-color: @color-2;
+    svg {
+        margin-left: auto;
+        margin-right: auto;
+        .node {
+            cursor: pointer;
+            rect {
+            }
+            text {
+                font: 12px sans-serif;
+            }
+        }
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 1px;
+        }
+    }
+    .graph-svg-component {
+        background-color: @color-2;
+    }
+}
+.outer {
+    width:1140px;
+    height: 450px;
+    overflow: auto;
+	
+}
+.outer.hideScroll{
+	overflow: hidden;
+}
+.inner {
+    /*width: 990px;*/
+    width:1140px;
+    height:450px;
+}
+#team-chart {
+    display: block;
+    width: 100%;
+   /* height: 100%;*/
+}
+.button-expand,.button-collapse{
+    border:none;
+    /*padding:7px 20px;*/
+    padding:6px;
+    line-height:1;
+    border-radius: 20px;
+    float:right;
+    text-transform: uppercase;
+    
+}
+.button-collapse{
+    background:#C4A22C;
+    color:#ffffff;
+}
+.button-expand{
+    background:#035E66;
+    color:#cccccc;
+}
+.button-msg{
+    .fa{
+            border-radius: 50px;
+            text-transform: uppercase;
+            background:@color-14;
+            padding: 10px 12px;
+            color: #fff;
+           
+    }
+    float:right;
+    background: transparent;
+    border:none;
+     cursor: pointer;
+}
+
+.container.profile-modal-container{
+    width:860px;
+    min-width: auto;
+}
+/*.tooltip{
+    background:#ccc;
+    opacity: 0.7;
+    Padding:10px;
+}*/
+/*
+.tooltip:before{
+    content:'';
+    position:absolute;
+    width:0;
+    height:0;
+    left:-20px;
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-right:10px solid #ccc;
+    border-left:10px solid transparent;
+    
+}*/
+.message-block{
+    background: #ffffff;
+    height:auto;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.18);
+    border-right:3px solid @color-13;
+    p{
+        margin: 0;
+        padding: 0;
+        line-height:1.7em;
+    }
+    .disabled{
+        font-size: 13px;
+        opacity:0.5;
+    }
+}
+
+.myteam-container{
+    .message-block{
+        border-right:3px solid darken(@color-18,30%);
+    }
+}
+
+team-notification{
+	.panel{
+		display: inline-block;
+		width: 300px;
+		box-shadow: 0 0 8px @color-7;
+		.panel-body{
+			padding: 10px;
+		}
+		h5{
+			margin: 0 0 15px;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+		p{
+			margin: 0;
+			padding: 0 0 5px;
+		}
+		.btn{
+			padding: 4px 10px;
+		}
+	}
+}
+
+@media (min-width:320px) and (max-width:1024px){
+    .container.profile-modal-container{
+        width:auto;
+        .row{
+            .col-xs-3{
+                width:35%;
+            }
+            .col-xs-9{
+                width:60%;
+            }
+            .col-xs-6{
+                width:100%; 
+            }
+        }
+    }
+}
+
+#my_custom_menu{
+	.panel{
+		button.close{
+			margin: -12px -5px;
+		}
+	}
+}
+
+
+
+ 

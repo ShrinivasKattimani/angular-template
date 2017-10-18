@@ -1,0 +1,234 @@
+
+.timeline .media-ds{
+    margin:0px;
+}
+.timeline  .media-ds-body{
+    padding-left:40px;
+}
+.media-ds, .media-ds-body {
+    overflow: hidden;
+}
+.media-ds-body, .media-ds-left {
+    display: table-cell;
+    vertical-align: top;
+    /*padding-right:15px; */
+}
+.media-ds-body{   
+    position: relative;
+     
+        .action-item {
+            position: absolute;
+            right: 0px;
+            top: 10px;
+            a{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: @base-font - 4;
+            }
+        }
+        .action-forward { 
+            margin-top: 10px;
+            a{
+                text-transform:none;
+                font-weight: 300;
+                font-size: @base-font - 3;
+                color: #c4a105;
+                text-decoration: none;
+            }
+        }
+    &.overflow-viz {
+        overflow: visible;
+    } 
+}
+.media-ds{
+    margin-top:7px;
+    &.overflow-viz {
+        overflow: visible;
+    }
+}
+.media-comments{
+    float:left;
+}
+.media-comments a,.media-comments-count a{
+    float:left;
+    text-decoration: none;
+    color:#035e66;
+    font-size:@base-font - 4;
+}
+.media-comments a:nth-child(2),.media-comments-count a:nth-child(2){
+    margin-left:30px;
+}
+.media-comments-count a:nth-child(1) img {
+    display:inline-block;
+    vertical-align: top;  
+}
+.media-comments-count a:nth-child(2) img{
+    display:inline-block;
+     vertical-align: top;
+}
+.media-comments-count{
+    float:right;    
+}
+.media-comments-count span{
+    float:left;
+    margin-left:15px;
+    margin-top:-2px;
+    color:#818085;
+}
+.news-bottom-like-cmnt{
+    float:left;
+    width:100%;
+    margin:12px 0px;
+}
+.news-title, .news-content{
+    font-size:@base-font - 2;
+    color:#272a2d;
+    margin: 0px 0 0;
+    
+}
+.news-title{
+    font-family: 'Gotham-Book';
+    font-weight:normal
+}
+.col-new-con .news-title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+.col-new-con .news-content p {
+    font-family: 'Lato', sans-serif;
+}
+.news-content{
+    margin-top:10px;
+}
+.links-title{    
+    margin:10px 0px 0px 0px;
+}
+.links-title a{
+    text-decoration:none;
+    color:#035e66;  
+    font-family: 'Gotham-Book';
+}
+
+
+.timeline{
+    margin: 10px auto 0px;
+    position: relative;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+    min-height:418px
+}
+.timeline:before {
+    background: #e1e1e1;    
+    content: "";
+    height: 100%;
+    left: 60px;
+    position: absolute;
+    top: 0;
+    width: 1px;
+     padding-bottom: 999px;
+}
+.timeline:after {
+    clear: both;
+    content: "";
+    display: table;
+    width: 100%;
+}
+.timeline-item { 
+    float: left;
+    width: 100%;
+    position:relative;
+    margin:0px 0px 25px 0px;
+}
+.timeline-icon{
+    border: 2px solid #035e66;
+    border-radius: 8px;    
+    height: 8px;
+    width: 8px;    
+    left: 60px;
+    margin-left: -3px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    background:#fff;
+}
+.fin-dash-link{
+    float:right;
+    margin:0px 0px 0px 10px;
+    
+}
+.timeline-date{
+    float:left;    
+    text-align: center;
+    margin-top: -5px;
+}
+.timeline-schedule{
+    float:left;    
+}
+.timeline-date h1{
+    font-size:@base-font + 14;
+    margin:0px;
+    color:#035e66;
+}
+.time-formate{
+    font-size: @base-font - 4;
+    color:#818085
+}
+.time-icon{
+    float: left;
+    margin: 0px 15px 0 0;
+}
+.timeline-schedule p{
+    margin:0px 0px 15px 0px;
+}
+.month-yr{
+    font-size:@base-font - 4;
+    text-transform: uppercase;
+}
+.timeline-schedule p{
+    font-size:@base-font - 2;
+}
+.col-content{
+    padding: 0 0px;
+}
+.usefull-link-con{
+    min-height:413px;
+}
+.col-content input{
+    border-width: 0px 0px 1px 0px;
+    border-color:#c3c7c9;
+    height:30px;
+    font-size:@base-font - 2;
+    color:#2a2d30;
+    border-style: solid;
+    width:99%;
+}
+.icon-box {
+    background: @color-9;
+    border-radius: 8px;    
+    height: 41px;
+    margin: 0 0 0;
+    text-align: center;
+    width: 41px;
+}
+.icon-box img {
+    padding: 4px 0 0;   
+}
+.icon-box.second img {
+    padding: 6px 0 0;   
+}
+
+.breadcrumb{
+    background-color: transparent;
+    padding: 0 0 0 2px;
+    margin: 0 0 5px;
+       
+}
+.breadcrumb li a{
+    color:#035e66;
+    text-decoration: none;
+}
+.breadcrumb > li + li::before {
+    color: #035e66;
+    content: "/ ";
+    padding: 0 5px;
+}
