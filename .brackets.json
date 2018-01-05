@@ -1,6 +1,0 @@
-{
-    "jscodehints.detectedExclusions": [
-        "F:/projects/petrofac_landing_portal/app/js/kendo-ui/js/kendo.scheduler.recurrence.min.js",
-        "F:/projects/petrofac_landing_portal/app/modules/my-space/createAbsenceModule.js"
-    ]
-}
